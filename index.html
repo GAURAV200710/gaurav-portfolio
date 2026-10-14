@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gaurav Kumar | Portfolio</title>
+    <meta name="description" content="Gaurav Kumar's personal portfolio, education and contact information.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: #24243e;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 45px 15px;
+            background:
+                radial-gradient(circle at 15% 20%, #414165 0 12%, transparent 13%),
+                radial-gradient(circle at 80% 60%, #414165 0 15%, transparent 16%),
+                linear-gradient(135deg, #22223b, #383453);
+        }
+
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border: 5px solid #873cf5;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 8px;
+        }
+
+        .hero h2 {
+            font-size: 21px;
+            font-weight: normal;
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            overflow-wrap: anywhere;
+        }
+
+        a {
+            color: #c4b5fd;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 20px 10px;
+            background: white;
+        }
+
+        nav a {
+            color: #7135d8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        section h2 {
+            color: #c4b5fd;
+        }
+
+        .card {
+            max-width: 550px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 12px;
+            background: #353552;
+            line-height: 1.8;
+            overflow-wrap: anywhere;
+        }
+
+        footer {
+            padding: 15px;
+            text-align: center;
+            background: #17172b;
+        }
+
+        @media (max-width: 600px) {
+            .profile-photo {
+                width: 145px;
+                height: 145px;
+            }
+
+            h1 {
+                font-size: 29px;
+            }
+
+            nav {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="hero" id="home">
+
+        <img src="gaurav.jpg"
+             alt="Gaurav Kumar Profile Photo"
+             class="profile-photo">
+
+        <h1>Gaurav Kumar</h1>
+        <h2>B.Tech Student</h2>
+        <p>Computer Science Engineering</p>
+
+        <div class="contact-info">
+            <p>✉️ mrgauravkr.84090@gmail.com</p>
+
+            <p>
+                ☎️ <a href="tel:+917482896562">
+                +91 7482896562</a>
+            </p>
+
+            <p>📍 India</p>
+        </div>
+
+    </header>
+
+    <nav>
+        <a href="#home">⌂ Home</a>
+        <a href="#education">🎓 Education</a>
+        <a href="#skills">💻 Skills</a>
+        <a href="#contact">✉️ Contact</a>
+    </nav>
+
+    <main>
+
+        <section id="education">
+            <h2>My Education</h2>
+
+            <div class="card">
+                <p><strong>10th:</strong> Passed</p>
+                <p><strong>12th:</strong> Passed</p>
+                <p><strong>Current Education:</strong>
+                    Pursuing B.Tech</p>
+                <p><strong>Branch:</strong>
+                    Computer Science Engineering</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+
+            <div class="card">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>C Programming - Learning</p>
+                <p>Web Development - Learning</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <div class="card">
+                <p>
+                    Email:
+                    <a href="mailto:mrgauravkr.84090@gmail.com">
+                    mrgauravkr.84090@gmail.com</a>
+                </p>
+
+                <p>
+                    Mobile:
+                    <a href="tel:+917482896562">
+                    +91 7482896562</a>
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Gaurav Kumar | My Portfolio</p>
+    </footer>
+
+</body>
+</html>
